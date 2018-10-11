@@ -11,7 +11,8 @@ function getCityByPostalCode(postalCode) {
 }
 
 function writesData(response) {
-    let tabbleBody = document.getElementById('dataCityRow');
+console.log(response);    
+let tabbleBody = document.getElementById('dataCityRow');
     tabbleBody.innerHTML = '';
 
     for (let city of response.data.features) {
